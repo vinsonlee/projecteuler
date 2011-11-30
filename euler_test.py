@@ -14,6 +14,14 @@ class IsPalindromeTestCase(unittest.TestCase):
         self.assertEqual(euler.ispalindrome(1231), False)
 
 
+class IsPandigital(unittest.TestCase):
+    def test_ispandigital(self):
+        self.assertEqual(euler.ispandigital(1), True)
+        self.assertEqual(euler.ispandigital(2), False)
+        self.assertEqual(euler.ispandigital(2143), True)
+        self.assertEqual(euler.ispandigital(2145), False)
+
+
 class IsPrimeTestCase(unittest.TestCase):
     def test_isprime(self):
         self.assertEqual(euler.isprime(1), False)

@@ -9,6 +9,18 @@ def ispalindrome(x):
     return str(x) == str(x)[::-1]
 
 
+def ispandigital(x):
+    """
+    Check if x is pandigital.
+
+    An n-digit number is pandigital if it makes use of all the digits 1
+    to n exactly once.
+    """
+
+    digits = len(str(x))
+    return sorted([int(c) for c in str(x)]) == range(1, digits + 1)
+
+
 def isprime(x):
     """
     Check if x is prime.
