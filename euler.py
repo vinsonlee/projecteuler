@@ -1,6 +1,14 @@
 import math
 
 
+def ispalindrome(x):
+    """
+    Check if x is a palindrome.
+    """
+
+    return str(x) == str(x)[::-1]
+
+
 def isprime(x):
     """
     Check if x is prime.
